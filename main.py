@@ -7,15 +7,15 @@ bot = telebot.TeleBot(token)
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
-    bot.reply_to(message, "Привет! Я твой Telegram бот. Напиши команду /hello, /bye, /start  ")
+    bot.reply_to(message, "HI! I am your Telegram bot. Use commands /hello, /bye, /start or upload some cloud pictures for me to analyze them")
 
 @bot.message_handler(commands=['hello'])
 def send_hello(message):
-    bot.reply_to(message, "Привет! Как дела?")
+    bot.reply_to(message, "Hi! How are you?")
 
 @bot.message_handler(commands=['bye'])
 def send_bye(message):
-    bot.reply_to(message, "Пока! Удачи!")
+    bot.reply_to(message, "Bye!")
 
 @bot.message_handler(content_types=['photo'])
 def photo(message):
