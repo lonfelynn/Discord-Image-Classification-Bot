@@ -1,0 +1,5 @@
+0 cumulus clouds
+1 stratus clouds
+2 cirrus clouds
+3 nimbus clouds
+4 lenticular clouds
